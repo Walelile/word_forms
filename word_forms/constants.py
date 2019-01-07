@@ -14,7 +14,8 @@ for synset in list(wn.all_synsets()):
     for lemma in synset.lemmas():
         ALL_WORDNET_WORDS.add(lemma.name())
 
-verbs_fh =  open(Path(__file__).ancestor(1).child("en-verbs.txt"))
+#verbs_fh =  open(Path(__file__).ancestor(1).child("en-verbs.txt"))
+verbs_fh =  open(Path(__file__).ancestor(1).child("myenverbs.txt"))
 lines = verbs_fh.readlines()
 verbs_fh.close()
 CONJUGATED_VERB_LIST = []
